@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.mahanandig.sample.SampleApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 16.584 s <<< FAILURE! - in com.mahanandig.sample.SampleApplicationTests
+customHelloWithEmptyParamTest  Time elapsed: 1.908 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.echo"
+	at com.mahanandig.sample.SampleApplicationTests.customHelloWithEmptyParamTest(SampleApplicationTests.java:66)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.mahanandig.sample.SampleApplicationTests.customHelloWithEmptyParamTest(SampleApplicationTests.java:66)
+
+defaultHelloTest  Time elapsed: 1.69 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.echo"
+	at com.mahanandig.sample.SampleApplicationTests.defaultHelloTest(SampleApplicationTests.java:36)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.mahanandig.sample.SampleApplicationTests.defaultHelloTest(SampleApplicationTests.java:36)
+
+customHelloTest  Time elapsed: 1.416 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.echo"
+	at com.mahanandig.sample.SampleApplicationTests.customHelloTest(SampleApplicationTests.java:56)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.mahanandig.sample.SampleApplicationTests.customHelloTest(SampleApplicationTests.java:56)
+
+defaultHelloWithParamTest  Time elapsed: 1.446 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.echo"
+	at com.mahanandig.sample.SampleApplicationTests.defaultHelloWithParamTest(SampleApplicationTests.java:46)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.mahanandig.sample.SampleApplicationTests.defaultHelloWithParamTest(SampleApplicationTests.java:46)
+
+customHelloWithoutParamTest  Time elapsed: 1.562 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at com.mahanandig.sample.SampleApplicationTests.customHelloWithoutParamTest(SampleApplicationTests.java:75)
+
